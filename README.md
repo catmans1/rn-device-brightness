@@ -1,21 +1,42 @@
 # rn-device-brightness
 
-a native module for React Native to control the screen brightness.
+A native module for React Native to control the screen brightness.
 
 ## Installation
 
 ```sh
 npm install rn-device-brightness
 ```
+or
+```sh
+yarn add rn-device-brightness
+```
+
+## Setup
+### Android
+- Remember add this code in your `AndroidManifest.xml`
+
+```<uses-permission android:name="android.permission.WRITE_SETTINGS" />```
+### iOS
+- Run pod
+  - `cd ios && pod install && cd ..` or `npx pod-install`
+## Function
+
+<strong>`getBrightness`</strong>: support for Android and iOS, will get brightness level
+<strong>`getSystemBrightness`</strong>: support Android only, will get brightness level
+<strong>`setBrightness`</strong>: support for Android and iOS, set brightness
+<strong>`setBrightnessAnimation`</strong>: support for (Android and iOS), set brightness with animation
+<strong>`setSystemBrightness`</strong>: support for Android, set system brightness
 
 ## Usage
 
 ```js
-import { multiply } from 'rn-device-brightness';
+import { getBrightness, setBrightness } from 'rn-device-brightness';
 
 // ...
 
-const result = await multiply(3, 7);
+const level = await getBrightness();
+setBrightness(0.75)
 ```
 
 ## Contributing
