@@ -23,9 +23,13 @@ yarn add rn-device-brightness
 ## Function
 
 <strong>`getBrightness`</strong>: support for Android and iOS, will get brightness level
+
 <strong>`getSystemBrightness`</strong>: support Android only, will get brightness level
+
 <strong>`setBrightness`</strong>: support for Android and iOS, set brightness
+
 <strong>`setBrightnessAnimation`</strong>: support for (Android and iOS), set brightness with animation
+
 <strong>`setSystemBrightness`</strong>: support for Android, set system brightness
 
 ## Usage
