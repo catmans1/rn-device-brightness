@@ -1,7 +1,7 @@
 {
   "name": "rn-device-brightness",
   "version": "0.1.0",
-  "description": "a native module for React Native to control the screen brightness.",
+  "description": "A native module for React Native to control the screen brightness.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
