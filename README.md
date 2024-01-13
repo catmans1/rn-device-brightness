@@ -32,7 +32,7 @@ yarn add rn-device-brightness
 
 `npx pod-install && yarn ios` or `yarn android`
 
-### Function
+### Functions
 
 <strong>getBrightness</strong>: support Android and iOS, get brightness level
 
