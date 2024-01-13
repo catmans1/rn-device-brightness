@@ -1111,7 +1111,7 @@ PODS:
     - React-jsi (= 0.73.2)
     - React-logger (= 0.73.2)
     - React-perflogger (= 0.73.2)
-  - rn-device-brightness (0.1.0):
+  - rn-device-brightness (0.3.0):
     - glog
     - RCT-Folly (= 2022.05.16.00)
     - React-Core
@@ -1371,7 +1371,7 @@ SPEC CHECKSUMS:
   React-runtimescheduler: df8945a656356ff10f58f65a70820478bfcf33ad
   React-utils: f5bc61e7ea3325c0732ae2d755f4441940163b85
   ReactCommon: 45b5d4f784e869c44a6f5a8fad5b114ca8f78c53
-  rn-device-brightness: 39e127ef176f31b1b0f7a9eb42d9d92b8981cd98
+  rn-device-brightness: 9e4a1d13566e78f89b2a8e5ce585cba515be451f
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: e64aa65de36c0832d04e8c7bd614396c77a80047
 

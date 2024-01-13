@@ -17,10 +17,6 @@ const RnDeviceBrightness = NativeModules.RnDeviceBrightness
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return RnDeviceBrightness.multiply(a, b);
-}
-
 export function getBrightness(): Promise<number> {
   return RnDeviceBrightness.getBrightness();
 }

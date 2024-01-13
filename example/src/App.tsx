@@ -4,18 +4,15 @@ import { StyleSheet, View, Text, Button, Platform } from 'react-native';
 import {
   getBrightness,
   getSystemBrightness,
-  multiply,
   setBrightness,
   setBrightnessAnimation,
   setSystemBrightness,
 } from 'rn-device-brightness';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
   const [level, setLevel] = React.useState<number | undefined>();
 
   React.useEffect(() => {
-    multiply(3, 7).then(setResult);
     if (Platform.OS === 'android') {
       getSystemBrightness().then(setLevel);
     } else {
@@ -25,11 +22,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>
-        Result:
-        {result}
-        {level}
-      </Text>
+      <Text>Result: {level}</Text>
 
       <Button
         title="Set Brightness"

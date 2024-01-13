@@ -3,11 +3,6 @@ import UIKit
 @objc(RnDeviceBrightness)
 class RnDeviceBrightness: NSObject {
 
-  @objc(multiply:withB:withResolver:withRejecter:)
-  func multiply(a: Float, b: Float, resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
-    resolve(a*b)
-  }
-
   @objc(getBrightness:withRejecter:)
   func getBrightness(resolve:RCTPromiseResolveBlock,reject:RCTPromiseRejectBlock) -> Void {
       resolve(UIScreen.main.brightness)
