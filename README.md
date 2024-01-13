@@ -13,6 +13,7 @@ yarn add rn-device-brightness
 ```
 
 #####iOS
+
 `cd ios && pod install && cd ..` or `npx pod-install`
 
 ## Permission
@@ -23,9 +24,11 @@ yarn add rn-device-brightness
 <uses-permission android:name="android.permission.WRITE_SETTINGS" />
 ```
 
-###Running the example project
 
-`sh cd example && yarn install`
+##Running the example project
+
+
+`cd example && yarn install`
 
 `npx pod-install && yarn ios` or `yarn android`
 
