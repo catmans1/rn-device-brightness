@@ -12,7 +12,7 @@ or
 yarn add rn-device-brightness
 ```
 
-#####iOS
+##### iOS
 
 `cd ios && pod install && cd ..` or `npx pod-install`
 
@@ -25,7 +25,7 @@ yarn add rn-device-brightness
 ```
 
 
-##Running the example project
+### Running the example project
 
 
 `cd example && yarn install`
