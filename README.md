@@ -12,35 +12,50 @@ or
 yarn add rn-device-brightness
 ```
 
-## Setup
-### Android
-- Remember add this code in your `AndroidManifest.xml`
+#####iOS
+`cd ios && pod install && cd ..` or `npx pod-install`
 
-```<uses-permission android:name="android.permission.WRITE_SETTINGS" />```
-### iOS
-- Run pod
-  - `cd ios && pod install && cd ..` or `npx pod-install`
-## Function
+## Permission
+##### Android
+- Remember add the following uses-permission to your `AndroidManifest.xml` (usually found at: android/src/main/)
 
-<strong>`getBrightness`</strong>: support for Android and iOS, will get brightness level
+```sh
+<uses-permission android:name="android.permission.WRITE_SETTINGS" />
+```
 
-<strong>`getSystemBrightness`</strong>: support Android only, will get brightness level
+###Running the example project
 
-<strong>`setBrightness`</strong>: support for Android and iOS, set brightness
+`sh cd example && yarn install`
 
-<strong>`setBrightnessAnimation`</strong>: support for (Android and iOS), set brightness with animation
+`npx pod-install && yarn ios` or `yarn android`
 
-<strong>`setSystemBrightness`</strong>: support for Android, set system brightness
+### Function
+
+<strong>getBrightness</strong>: support Android and iOS, get brightness level
+
+<strong>getSystemBrightness</strong>: support Android only, get brightness level
+
+<strong>setBrightness</strong>: support Android and iOS, set brightness
+
+<strong>setBrightnessAnimation</strong>: support Android and iOS, set brightness with animation
+
+<strong>setSystemBrightness</strong>: support Android, set system brightness
 
 ## Usage
 
 ```js
-import { getBrightness, setBrightness } from 'rn-device-brightness';
+import { Platform } from 'react-native';
+import { getBrightness, setBrightness, setSystemBrightnness } from 'rn-device-brightness';
 
 // ...
 
 const level = await getBrightness();
-setBrightness(0.75)
+
+if (Platform.OS === 'android') {
+  setSystemBrightnness(0.75);
+} else {
+  setBrightness(0.75);
+}
 ```
 
 ## Contributing
